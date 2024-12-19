@@ -1,0 +1,217 @@
+/* Import Google Font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  position: absolute;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, rgb(0, 0, 0),rgb(255, 255, 255));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  perspective: 1000px;
+}
+
+section::before {
+  content: "";
+  position: relative;
+  height: 240px;
+  width: 240px;
+  z-index: 4;
+  border-radius: 50%;
+  transform: translate(150px, -200px);
+  background: linear-gradient(90deg, #fb5800, #a51dbd);
+
+}
+
+section::after {
+  content: "";
+  position: relative;
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
+  transform: translate(-100px, 200px);
+  background: linear-gradient(90deg, #ac06ff, #fb5800);
+}
+
+.container {
+  position: relative;
+  height: 400px;
+  width: 375px;
+  z-index: 100;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+}
+
+.container:hover {
+  transform: rotateY(180deg);
+}
+
+.container .card {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 25px;
+  border-radius: 25px;
+  backdrop-filter: blur(25px);
+  background: rgba(138, 14, 240, 0.2);
+  box-shadow: 0 25px 45px rgba(75, 178, 109, 0.87);
+  border: 2px solid rgba(255, 43, 43, 0.726);
+  backface-visibility: hidden; /* Ensure backface-visibility is set */
+  transform-style: preserve-3d;
+}
+
+.front-face {
+  backface-visibility:hidden;
+}
+
+.front-face header,
+.front-face .logo {
+  display: flex;
+  align-items: center;
+}
+
+.front-face .logo img {
+  width: 100px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+/* vatsal */
+h4 {
+  font-size: 30px;
+  font-weight: 400;
+  text-shadow: 3px 3px rgb(231, 24, 24);
+  color: #05cfee;
+  
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 400;
+    color: gold;
+  }
+
+.Topic{
+    font-size: 20px;
+    font-weight: 400;
+    color: gold;
+}
+.th, td{
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(14, 170, 206);
+}
+
+.front-face .card-details {
+  display: flex;
+  margin-top: 10px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+
+
+
+/* ------------------------------------------------------------------------- */
+.card.back-face {
+  border: 2px;
+  padding: 15px 25px 25px 25px;
+  transform: rotateY(180deg);
+  backface-visibility: hidden; /* Ensure backface-visibility is set */
+}
+
+.logotwo{
+    height: 200px;
+    width: 200px;
+    background-color: #ffa600;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.logothree{
+    padding: 0%;
+}
+
+#AU{
+    color: rgb(174, 0, 255);
+    font-size: 70px;
+    text-align: center;
+    text-shadow: 4px 4px #0e0808;
+    /* transform: translate(70px, -150px); */
+    z-index: 4;
+}
+
+#Ignite {
+  /* background: linear-gradient(to right, rgba(145, 4, 245, 0.987),rgb(255, 142, 4)); */
+    color: rgb(174, 0, 255);
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 4px 4px #0e0808; 
+    /* transform: translate(400px, 200px); */
+    z-index: 5;
+}
+
+#Signature{
+    text-align: center;
+    font-family: italic;
+    font-size:x-large;
+    font-weight: bold;
+}
+
+.logothree .img{
+    align-items: center;
+}
+
+
+/* .card.back-face h6 {
+  font-size: 8px;
+} */
+
+/* .card.back-face .magnetic-strip {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  height: 45px;
+  width: 100%;
+  background: #000;
+} */
+
+/* .card.back-face .signature {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 80px;
+  height: 40px;
+  width: 85%;
+  border-radius: 6px;
+  background: repeating-linear-gradient(#fff,
+      #fff 3px,
+      #efefef 0px,
+      #efefef 9px);
+} */
+
+/* .signature i {
+  color: #000;
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  background-color: #fff;
+  margin-right: -30px;
+  z-index: -1;
+} */
+
+/* .card.back-face h5 {
+  font-size: 8px;
+  margin-top: 15px;
+} */
